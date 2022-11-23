@@ -1,0 +1,23 @@
+#new_article_title {
+    color: rgb(85, 45, 53);
+    text-align: center;
+    padding: 1em;
+}
+
+#new_article_form {
+    padding: 3em;
+}
+
+#back_to_articles_link {
+    text-decoration: none;
+    color: rgb(87, 87, 54);
+    font-weight: 700;
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

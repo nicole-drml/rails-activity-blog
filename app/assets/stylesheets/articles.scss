@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(174, 222, 127);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#articles_title {
+    color: rgb(85, 45, 53);
+    text-align: center;
+    padding: 1em;
+}
+
+#articles {
+    color: rgb(66, 35, 41);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 40px;
+    padding: 1em;
+}
+
+.show_article_link {
+    text-decoration: none;
+    color: rgb(87, 87, 54);
+    font-weight: 700;
+    margin-bottom: 50px;
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.each_article {
+    color: rgb(127, 178, 220);
+}
+
+.new_article_link {
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(64, 64, 40);
+    padding: 1em;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

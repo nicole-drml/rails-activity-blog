@@ -1,0 +1,22 @@
+#showed-article {
+    padding: 10px;
+}
+
+.links-in-show {
+    text-decoration: none;
+    color: rgb(87, 87, 54);
+    font-weight: 700;
+    margin-bottom: 50px;
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+#destroy-button {
+    padding: 5px;
+}
