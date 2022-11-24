@@ -6,6 +6,6 @@
   <%= link_to "Edit this article", edit_article_path(@article), :class => "links_in_show" %> |
   <%= link_to "Back to articles", articles_path, :class => "links_in_show"  %>
 
-  <%= button_to "Destroy this article", @article, method: :delete, data: { confirm: 'Are you sure?' }, :id => "destroy-button"  %>
+  <%= button_to "Destroy this article", @article, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, :id => "destroy-button"  %>
 </div>
 

@@ -11,6 +11,22 @@ $moss: rgb(87, 87, 54);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+a {
+    all: unset;
+}
+
+.new_article_link {
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(64, 64, 40);
+    padding: 1em;
+    
+    &:hover {
+        color: rgba(64, 64, 40, .6);
+    }
+}
+
 body {
     background-color: rgb(250, 233, 215);
 }
@@ -25,50 +41,45 @@ body {
     color: black;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     padding: 1em;
 
     .article {
         display: block;
-        margin-bottom: 30px;
+        cursor: pointer;
+        padding: 18px 18x 18px 0;
+        transition: 300ms;
+        text-decoration: none;
+        color: #261738;
 
-        p {
-            color: black;
-            
-            strong{
-                color: $accent-violet;
-                font-weight: 800;
+        &:hover {
+            background-color: rgba(87, 87, 54, .1);
+            transition: 300ms;
+
+            .show_article_link {
+                opacity: 1;
+                transition: 300ms;
             }
+        }
+
+        h3 {
+            color: $violet;
+        }
+
+        .article_content {
+            font-size: 16px;
         }
 
         .show_article_link {
-            text-decoration: none;
             color: rgb(87, 87, 54);
             font-weight: 700;
-            margin-bottom: 50px;
-            &:visited {
-                text-decoration: none;
-            }
-        
-            &:hover {
-                text-decoration: underline;
-            }
+            font-size: 14px;
+            opacity: 0;
+            transition: 300ms;
+            text-align: center;
+            padding: 5px;
         }
         
     }
 }
 
-
-
-
-.new_article_link {
-    text-decoration: none;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: rgb(64, 64, 40);
-    padding: 1em;
-    
-    &:hover {
-        text-decoration: underline;
-    }
-}
