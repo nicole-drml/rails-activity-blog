@@ -3,11 +3,9 @@
 one:
   title: MyString
   date: 2022-11-23
-  category: MyString
   content: MyString
 
 two:
   title: MyString
   date: 2022-11-23
-  category: MyString
   content: MyString

@@ -1,10 +1,11 @@
-#showed-article {
+#showed_article {
     padding: 10px;
 }
 
-.links-in-show {
+.links_in_show {
     text-decoration: none;
     color: rgb(87, 87, 54);
+    transition: 300;
     font-weight: 700;
     margin-bottom: 50px;
 
@@ -13,10 +14,11 @@
     }
 
     &:hover {
-        text-decoration: underline;
+        color: rgba(87, 87, 54, .7);
+        transition: 300;
     }
 }
 
-#destroy-button {
+#destroy_button {
     padding: 5px;
 }

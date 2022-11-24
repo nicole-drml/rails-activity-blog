@@ -1,13 +1,17 @@
+<%= render "preloader" %>
+
 <p style="color: green"><%= notice %></p>
 
 <h1 id="articles_title">Articles</h1>
 
-<div id="articles">
-  <% @articles.each do |article| %>
-    <%= render article, :class => "each_article" %>
-    <p>
-      <%= link_to "Show this article", article, :class => "show_article_link" %>
-    </p>
+<div class="articles">
+  <% @articles.reverse.each do |article| %>
+    <div class="article">
+      <%= render article, :class => "article_preview" %>
+      <p>
+        <%= link_to "Show this article", article, :class => "show_article_link" %>
+      </p>
+    </div>
   <% end %>
 </div>
 

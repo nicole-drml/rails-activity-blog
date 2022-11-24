@@ -1,10 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @article, :id => "showed-article" %>
+<%= render @article, :id => "showed_article" %>
 
 <div>
-  <%= link_to "Edit this article", edit_article_path(@article), :class => "links-in-show" %> |
-  <%= link_to "Back to articles", articles_path, :class => "links-in-show"  %>
+  <%= link_to "Edit this article", edit_article_path(@article), :class => "links_in_show" %> |
+  <%= link_to "Back to articles", articles_path, :class => "links_in_show"  %>
 
-  <%= button_to "Destroy this article", @article, method: :delete, :id => "destroy-button"  %>
+  <%= button_to "Destroy this article", @article, method: :delete, data: { confirm: 'Are you sure?' }, :id => "destroy-button"  %>
 </div>
+

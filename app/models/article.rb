@@ -1,3 +1,4 @@
 class Article < ApplicationRecord
-    validates :title, :date, :category, :content, presence: true
+    validates :title, :content, presence: true
+    validates :title, length: {maximum: 50}
 end

@@ -14,7 +14,6 @@ class ArticlesTest < ApplicationSystemTestCase
     visit articles_url
     click_on "New article"
 
-    fill_in "Category", with: @article.category
     fill_in "Content", with: @article.content
     fill_in "Date", with: @article.date
     fill_in "Title", with: @article.title
@@ -28,7 +27,6 @@ class ArticlesTest < ApplicationSystemTestCase
     visit article_url(@article)
     click_on "Edit this article", match: :first
 
-    fill_in "Category", with: @article.category
     fill_in "Content", with: @article.content
     fill_in "Date", with: @article.date
     fill_in "Title", with: @article.title
