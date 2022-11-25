@@ -2,7 +2,7 @@
 
 <h1 id="articles_title">Articles</h1>
 
-<div class="articles">
+<div class="articles_container">
   <span><%= link_to "New Article", new_article_path, :class => "new_article_link"  %></span>
   <% @articles.reverse.each do |article| %>
     <%= link_to article do %>
