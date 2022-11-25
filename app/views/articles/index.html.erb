@@ -1,18 +1,15 @@
-<p style="color: green"><%= notice %></p>
+<p  class="notice_p" style="color: #462150"><%= notice %></p>
 
 <h1 id="articles_title">Articles</h1>
 
 <div class="articles">
-<%= link_to "New Article", new_article_path, :class => "new_article_link"  %>
-
+  <span><%= link_to "New Article", new_article_path, :class => "new_article_link"  %></span>
   <% @articles.reverse.each do |article| %>
     <%= link_to article do %>
       <div class="article" >
-        <h3><%= article.title.titleize %></h3> 
+        <span id="article_title"><%= article.title.titleize %> </span> <br>
+        <span id="article_date"><%= article.created_at.to_s.split(" ")[0] %>  </span>
         <p class="article_content"><%= article.content %></p> 
-        <p class="show_article_link">
-          <%= link_to "Show this article", article %>
-        </p>
       </div>
     <% end %>
   <% end %>

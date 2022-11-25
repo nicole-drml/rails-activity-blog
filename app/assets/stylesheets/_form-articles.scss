@@ -11,7 +11,7 @@ form {
 
   .fields-inside-form {
     border: 1px solid #261738;
-    padding: 2px;
+    padding: 5px;
     border-radius: 5px;
   }
 
@@ -24,6 +24,8 @@ form {
     height: 50vh;
     background-color: rgb(250, 233, 215);
     font-size: 14px;
+    padding: 15px;
+    line-height: 1.3em;
 
     &::-webkit-scrollbar {
       margin: 3px;

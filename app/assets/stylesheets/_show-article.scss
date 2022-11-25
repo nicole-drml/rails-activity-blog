@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .show_container {
@@ -19,23 +19,21 @@ body {
   padding: 5px 0;
 }
 
-
-h2{
-    color: rgb(85, 45, 53);
-    display: block;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-  }
-
+h2 {
+  color: rgb(85, 45, 53);
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
 
 #showed_article {
   padding: 10px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(213, 200, 186);
+  background-color: rgba(70, 33, 80, .05);
   grid-column: 3/11;
   grid-row: 2/11;
   overflow-y: scroll;
@@ -52,33 +50,38 @@ h2{
 
   .article_content {
     padding: 5px;
-    text-overflow: ellipsis;
-    white-space: pre-wrap
+    white-space: pre-wrap;
+    line-height: 1.3em;
   }
 }
 
 #links_container {
+  align-self: center;
+  margin-top: auto;
+  display: flex;
+  width: 100%;
+  grid-column: 3/11;
+  grid-row: 10/12;
+  margin-top: 40px;
+
+  #edit_link {
+    text-align: center;
     align-self: center;
-    margin-top: auto;
-    display: flex;
-    width: 100%;
-    grid-column: 3/11;
-    grid-row: 10/12;
-    margin-top: 40px;
+    margin-left: auto;
+  }
 
-    #edit_link {
-      text-align: center;
-      align-self: center;
-      margin-left: auto;
-    }
+  #destroy_button {
+    padding: 5px;
+    z-index: 5;
+    color: #261738;
+    margin-left: auto;
 
-    #destroy_button {
-      padding: 5px;
-      z-index: 5;
-      color: black;
-      margin-left: auto;
+    &:hover {
+      color: rgba(38, 23, 56, 0.6);
+      transition: 300ms;
     }
   }
+}
 
 .links_in_show {
   text-decoration: none;
