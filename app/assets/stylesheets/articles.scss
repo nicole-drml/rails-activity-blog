@@ -1,40 +1,29 @@
-$violet:#462150;
+$violet: #462150;
 $accent-violet: #261738;
 $mustard: #b87e2d;
 $green: #295021;
 $moss: rgb(87, 87, 54);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 a {
-    all: unset;
-}
-
-.new_article_link {
-    text-decoration: none;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: rgb(64, 64, 40);
-    padding: 1em;
-    
-    &:hover {
-        color: rgba(64, 64, 40, .6);
-    }
+all: unset;
 }
 
 body {
-    background-color: rgb(250, 233, 215);
+background-color: rgb(250, 233, 215);
 }
 
 #articles_title {
-    color: rgb(85, 45, 53);
-    text-align: center;
-    padding: 1em;
+color: rgb(85, 45, 53);
+text-align: center;
+margin-top: 20px;
 }
 
 .articles {
@@ -43,22 +32,36 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 1em;
+    margin-top: 3%;
 
-    .article {
-        display: block;
-        cursor: pointer;
-        padding: 18px 18x 18px 0;
-        transition: 300ms;
+    .new_article_link {
         text-decoration: none;
-        color: #261738;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: rgb(64, 64, 40);
 
         &:hover {
-            background-color: rgba(87, 87, 54, .1);
+            color: rgba(64, 64, 40, 0.6);
+        }
+    }
+
+    .article {
+    display: block;
+    cursor: pointer;
+    padding: 18px 18x 18px 0;
+    transition: 300ms;
+    text-decoration: none;
+    color: #261738;
+    max-height: 100px;
+    overflow: hidden;
+
+        &:hover {
+            background-color: rgba(87, 87, 54, 0.1);
             transition: 300ms;
 
             .show_article_link {
-                opacity: 1;
-                transition: 300ms;
+            opacity: 1;
+            transition: 300ms;
             }
         }
 
@@ -67,7 +70,9 @@ body {
         }
 
         .article_content {
+            white-space: pre-wrap;
             font-size: 16px;
+            text-overflow: ellipsis;
         }
 
         .show_article_link {
@@ -79,7 +84,5 @@ body {
             text-align: center;
             padding: 5px;
         }
-        
     }
 }
-

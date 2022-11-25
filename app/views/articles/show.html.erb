@@ -1,11 +1,19 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @article, :id => "showed_article" %>
+<div class="show_container">
+  <%= link_to "Back to articles", articles_path, :id => "link_back", :class => "links_in_show"  %> <br>
 
-<div>
-  <%= link_to "Edit this article", edit_article_path(@article), :class => "links_in_show" %> |
-  <%= link_to "Back to articles", articles_path, :class => "links_in_show"  %>
+  <h2><%= @article.title.titleize %></h2> 
+  <div id="showed_article" >
+    <p class="article_content"><%= @article.content %></p> 
+  </div>
+  <div id="links_container">
+    <%= link_to "Edit this article", edit_article_path(@article), :class => "links_in_show", :id => "edit_link" %> 
+    <%= link_to @article, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, :class => "links_in_show", :id => "destroy_button" do %>
+      <i class="fa-regular fa-trash-can"></i>
+  <% end %>
+</div>
 
-  <%= button_to "Destroy this article", @article, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, :id => "destroy-button"  %>
+
 </div>
 

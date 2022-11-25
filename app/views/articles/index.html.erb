@@ -4,9 +4,9 @@
 
 <h1 id="articles_title">Articles</h1>
 
+<div class="articles">
 <%= link_to "New Article", new_article_path, :class => "new_article_link"  %>
 
-<div class="articles">
   <% @articles.reverse.each do |article| %>
     <%= link_to article do %>
       <div class="article" >

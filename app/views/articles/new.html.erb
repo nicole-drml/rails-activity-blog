@@ -1,9 +1,9 @@
-<h1 id="new_article_title">New Article</h1>
+<div  id="new_article_container">
+  <h1 id="new_article_title">New Article</h1>
 
-<%= render "form", article: @article %>
+  <div class="back_container">
+    <%= link_to "Back to articles", articles_path, :id => "back_to_articles_link" %>
+  </div>
 
-<br>
-
-<div>
-  <%= link_to "Back to articles", articles_path, :id => "back_to_articles_link" %>
+  <%= render "form", article: @article %>
 </div>
