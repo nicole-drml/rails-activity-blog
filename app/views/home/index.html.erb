@@ -1,2 +1,6 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<%= render "preloader" %>
+
+<div>
+    <%= image_tag 'woman-reading-book-under-the-tree.gif', class: "woman_reading" %>
+    <h2>thinking.. writing.. hmmm.. for now check my <span id="previous_works_link"><%= link_to "previous works", articles_path %></span></h2>
+</div>
