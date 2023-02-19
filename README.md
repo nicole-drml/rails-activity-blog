@@ -1,6 +1,6 @@
 **Blog App**
 
-A Ruby on Rails application where the user can perform CRUD operations Article model. 
+A Ruby on Rails application where the user can perform CRUD operations on Article model. 
 
 Landing Page<br>
 ![Landing Page](app/assets/images/landing_page.png)
