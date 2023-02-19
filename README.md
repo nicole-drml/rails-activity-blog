@@ -1,24 +1,20 @@
-# README
+**Blog App**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Ruby on Rails application where the user can perform CRUD operations Article model. 
 
-Things you may want to cover:
+Landing Page<br>
+![Landing Page](app/assets/images/landing_page.png)
 
-* Ruby version
+Create Article <br>
+![View Article](app/assets/images/create_article.png)
 
-* System dependencies
+View Article <br>
+![Create Article](app/assets/images/articles.png)
 
-* Configuration
+Update Article <br>
+![Update Article](app/assets/images/landing_page.png)
 
-* Database creation
+Delete Article <br>
+![Delete Article](app/assets/images/delete_article.mov)
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
